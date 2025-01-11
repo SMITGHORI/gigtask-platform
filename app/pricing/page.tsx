@@ -5,6 +5,8 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { CheckCircle } from 'lucide-react'
 import { motion } from "framer-motion"
+import { useEffect } from 'react'
+import { useState } from 'react'
 
 export default function PricingPage() {
   const plans = [
@@ -83,4 +85,3 @@ export default function PricingPage() {
     </div>
   )
 }
-

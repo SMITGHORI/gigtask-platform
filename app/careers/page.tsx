@@ -6,6 +6,8 @@ import { Button } from "@/components/ui/button"
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import BackgroundGrid from '@/components/BackgroundGrid'
+import { useEffect } from 'react'
+import { useState } from 'react'
 
 export default function CareersPage() {
   const openPositions = [
@@ -88,4 +90,3 @@ export default function CareersPage() {
     </div>
   )
 }
-

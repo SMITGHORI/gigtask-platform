@@ -2,6 +2,8 @@ import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import PreFooter from '@/components/PreFooter'
 import { Badge } from "@/components/ui/badge"
+import { useEffect } from 'react'
+import { useState } from 'react'
 
 export default function HowItWorksPage() {
   const steps = [
@@ -53,4 +55,3 @@ export default function HowItWorksPage() {
     </div>
   )
 }
-

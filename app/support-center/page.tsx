@@ -8,6 +8,8 @@ import { Search } from 'lucide-react'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import BackgroundGrid from '@/components/BackgroundGrid'
+import { useEffect } from 'react'
+import { useState } from 'react'
 
 export default function SupportCenterPage() {
   const supportCategories = [
@@ -94,4 +96,3 @@ export default function SupportCenterPage() {
     </div>
   )
 }
-

@@ -3,6 +3,8 @@ import Footer from '@/components/Footer'
 import PreFooter from '@/components/PreFooter'
 import { Badge } from "@/components/ui/badge"
 import { Target, Calendar, IndianRupee, Shield, Users, Briefcase } from 'lucide-react'
+import { useEffect } from 'react'
+import { useState } from 'react'
 
 export default function FeaturesPage() {
   return (
@@ -52,4 +54,3 @@ export default function FeaturesPage() {
     </div>
   )
 }
-

@@ -3,6 +3,8 @@ import Footer from '@/components/Footer'
 import PreFooter from '@/components/PreFooter'
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
+import { useEffect } from 'react'
+import { useState } from 'react'
 
 export default function CategoriesPage() {
   const categories = [
@@ -48,4 +50,3 @@ export default function CategoriesPage() {
     </div>
   )
 }
-

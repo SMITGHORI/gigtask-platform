@@ -5,6 +5,8 @@ import { Badge } from "@/components/ui/badge"
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import BackgroundGrid from '@/components/BackgroundGrid'
+import { useEffect } from 'react'
+import { useState } from 'react'
 
 export default function AboutUsPage() {
   return (
@@ -73,4 +75,3 @@ export default function AboutUsPage() {
     </div>
   )
 }
-

@@ -20,24 +20,24 @@ export default function Footer() {
       transition={{ duration: 0.6 }}
       viewport={{ once: true }}
     >
-      <div className="container mx-auto px-4 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-5 gap-8 mb-8">
-          <div className="md:col-span-2">
-            <Link href="/" className="flex items-center space-x-2 mb-4">
-              <Leaf className="w-6 h-6 text-[#a3b18a]" />
-              <span className="text-lg font-bold animated-gradient-text">KaamKonnect</span>
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 sm:gap-8 mb-6 sm:mb-8">
+          <div className="sm:col-span-2 lg:col-span-2">
+            <Link href="/" className="flex items-center space-x-2 mb-3 sm:mb-4">
+              <Leaf className="w-5 h-5 sm:w-6 sm:h-6 text-[#a3b18a]" />
+              <span className="text-base sm:text-lg font-bold animated-gradient-text">KaamKonnect</span>
             </Link>
-            <p className="text-gray-400 text-sm">
+            <p className="text-gray-400 text-xs sm:text-sm leading-relaxed">
               Your gateway to flexible work opportunities and talented professionals in India.
             </p>
           </div>
           {footerLinks.map((section, index) => (
             <div key={index}>
-              <h3 className="font-semibold mb-4">{section.title}</h3>
-              <ul className="space-y-2 text-gray-400">
+              <h3 className="text-sm sm:text-base font-semibold mb-3 sm:mb-4">{section.title}</h3>
+              <ul className="space-y-1.5 sm:space-y-2 text-gray-400">
                 {section.links.map((link, linkIndex) => (
                   <li key={linkIndex}>
-                    <Link href="#" className="hover:text-[#a3b18a] transition-colors">
+                    <Link href="#" className="text-xs sm:text-sm hover:text-[#a3b18a] transition-colors">
                       {link}
                     </Link>
                   </li>
@@ -46,7 +46,7 @@ export default function Footer() {
             </div>
           ))}
         </div>
-        <div className="pt-8 border-t border-gray-800 text-center text-gray-400 text-sm">
+        <div className="pt-6 sm:pt-8 border-t border-gray-800 text-center text-gray-400 text-xs sm:text-sm">
           <p>&copy; {new Date().getFullYear()} KaamKonnect. All rights reserved.</p>
         </div>
       </div>

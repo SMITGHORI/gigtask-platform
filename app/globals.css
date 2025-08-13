@@ -43,11 +43,27 @@ body {
 
 .blurry-blob {
   position: absolute;
-  width: 300px;
-  height: 300px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   background-color: rgba(163, 177, 138, 0.3);
-  filter: blur(100px);
+  filter: blur(80px);
+}
+
+@media (min-width: 640px) {
+  .blurry-blob {
+    width: 250px;
+    height: 250px;
+    filter: blur(90px);
+  }
+}
+
+@media (min-width: 768px) {
+  .blurry-blob {
+    width: 300px;
+    height: 300px;
+    filter: blur(100px);
+  }
 }
 
 .scroll-fade-out {

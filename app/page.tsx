@@ -77,22 +77,22 @@ export default function Home() {
       <motion.section
         ref={heroRef}
         style={{ opacity, scale: scaleSpring, y: ySpring }}
-        className="relative pt-32 pb-20"
+        className="relative pt-24 sm:pt-32 pb-16 sm:pb-20 px-4 sm:px-6 lg:px-8"
       >
-        <div className="container mx-auto px-4 text-center">
+        <div className="container mx-auto text-center max-w-7xl">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={heroInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
             {/* BUYER: Update tagline to match your business */}
-            <Badge variant="outline" className="mb-8 border-[#a3b18a] bg-[#a3b18a]/10 text-[#a3b18a]">
+            <Badge variant="outline" className="mb-6 sm:mb-8 text-xs sm:text-sm border-[#a3b18a] bg-[#a3b18a]/10 text-[#a3b18a]">
               Connect. Work. Succeed.
             </Badge>
           </motion.div>
                       {/* BUYER: Update main headline to match your business value proposition */}
             <motion.h1
-              className="text-4xl sm:text-5xl md:text-7xl font-bold mb-6 animated-gradient-text"
+              className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-4 sm:mb-6 animated-gradient-text px-2 sm:px-0"
               initial={{ opacity: 0, y: 20 }}
               animate={heroInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.6, delay: 0.4 }}
@@ -101,7 +101,7 @@ export default function Home() {
             </motion.h1>
                       {/* BUYER: Update description to match your business model */}
             <motion.p
-              className="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto mb-12"
+              className="text-base sm:text-lg md:text-xl text-gray-300 max-w-2xl mx-auto mb-8 sm:mb-12 px-4 sm:px-0"
               initial={{ opacity: 0, y: 20 }}
               animate={heroInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.6, delay: 0.6 }}
@@ -111,34 +111,34 @@ export default function Home() {
           
           {/* Search Bar */}
           <motion.div
-            className="max-w-2xl mx-auto mb-12 relative"
+            className="max-w-2xl mx-auto mb-8 sm:mb-12 relative px-4 sm:px-0"
             initial={{ opacity: 0, y: 20 }}
             animate={heroInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6, delay: 0.8 }}
           >
-            <div className="absolute inset-y-0 left-4 flex items-center pointer-events-none">
-              <Search className="h-5 w-5 text-gray-400" />
+            <div className="absolute inset-y-0 left-6 sm:left-4 flex items-center pointer-events-none">
+              <Search className="h-4 w-4 sm:h-5 sm:w-5 text-gray-400" />
             </div>
             {/* BUYER: Customize search placeholder text */}
             <Input 
               type="text"
               placeholder="Search for opportunities..."
-              className="w-full pl-12 pr-4 py-6 bg-white/5 border-white/10 text-white placeholder:text-gray-400 focus:border-[#a3b18a]/50 focus:ring-[#a3b18a]/50"
+              className="w-full pl-10 sm:pl-12 pr-4 py-4 sm:py-6 text-sm sm:text-base bg-white/5 border-white/10 text-white placeholder:text-gray-400 focus:border-[#a3b18a]/50 focus:ring-[#a3b18a]/50"
             />
           </motion.div>
 
           {/* CTA Buttons */}
           <motion.div
-            className="flex flex-col sm:flex-row items-center justify-center gap-4"
+            className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 px-4 sm:px-0"
             initial={{ opacity: 0, y: 20 }}
             animate={heroInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6, delay: 1 }}
           >
             {/* BUYER: Update CTA button text to match your business actions */}
-            <Button size="lg" className="bg-[#a3b18a] text-black hover:bg-[#a3b18a]/80">
+            <Button size="lg" className="w-full sm:w-auto bg-[#a3b18a] text-black hover:bg-[#a3b18a]/80 px-6 sm:px-8">
               Post a Task
             </Button>
-            <Button size="lg" variant="outline" className="border-[#a3b18a] text-[#a3b18a] hover:bg-[#a3b18a] hover:text-black">
+            <Button size="lg" variant="outline" className="w-full sm:w-auto border-[#a3b18a] text-[#a3b18a] hover:bg-[#a3b18a] hover:text-black px-6 sm:px-8">
               Find Work
             </Button>
           </motion.div>
@@ -162,28 +162,28 @@ export default function Home() {
       {/* Features Grid */}
       <motion.section
         ref={featuresRef}
-        className="py-20"
+        className="py-16 sm:py-20 px-4 sm:px-6 lg:px-8"
         initial={{ opacity: 0 }}
         animate={featuresInView ? { opacity: 1 } : {}}
         transition={{ duration: 0.6 }}
       >
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto max-w-7xl">
           <motion.div 
-            className="text-center mb-16"
+            className="text-center mb-12 sm:mb-16"
             initial={{ opacity: 0, y: 20 }}
             animate={featuresInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6 }}
           >
-            <Badge variant="outline" className="mb-4 border-[#a3b18a] bg-[#a3b18a]/10 text-[#a3b18a]">
+            <Badge variant="outline" className="mb-3 sm:mb-4 text-xs sm:text-sm border-[#a3b18a] bg-[#a3b18a]/10 text-[#a3b18a]">
               Features
             </Badge>
-            <h2 className="text-4xl font-bold mb-4 animated-gradient-text">Everything You Need</h2>
-            <p className="text-gray-300 max-w-2xl mx-auto">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-4 animated-gradient-text px-4 sm:px-0">Everything You Need</h2>
+            <p className="text-sm sm:text-base text-gray-300 max-w-2xl mx-auto px-4 sm:px-0">
               Powerful features to help you find work or hire talent with ease in India.
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4">
             {/* BUYER: Customize feature grid icons and labels to match your business */}
             {[
               { icon: Briefcase, label: 'Jobs' },
@@ -200,10 +200,10 @@ export default function Home() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={featuresInView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
-                className="flex flex-col items-center justify-center p-4 bg-white/5 rounded-lg backdrop-blur-sm"
+                className="flex flex-col items-center justify-center p-3 sm:p-4 bg-white/5 rounded-lg backdrop-blur-sm min-h-[100px] sm:min-h-[120px]"
               >
-                <item.icon className="w-8 h-8 mb-2 text-[#a3b18a]" />
-                <span className="text-sm font-medium">{item.label}</span>
+                <item.icon className="w-6 h-6 sm:w-8 sm:h-8 mb-2 text-[#a3b18a]" />
+                <span className="text-xs sm:text-sm font-medium text-center">{item.label}</span>
               </motion.div>
             ))}
           </div>
@@ -213,28 +213,28 @@ export default function Home() {
       {/* How It Works */}
       <motion.section
         ref={howItWorksRef}
-        className="py-20 bg-[#a3b18a]/10"
+        className="py-16 sm:py-20 bg-[#a3b18a]/10 px-4 sm:px-6 lg:px-8"
         initial={{ opacity: 0 }}
         animate={howItWorksInView ? { opacity: 1 } : {}}
         transition={{ duration: 0.6 }}
       >
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto max-w-7xl">
           <motion.div 
-            className="text-center mb-16"
+            className="text-center mb-12 sm:mb-16"
             initial={{ opacity: 0, y: 20 }}
             animate={howItWorksInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6 }}
           >
-            <Badge variant="outline" className="mb-4 border-[#a3b18a] bg-[#a3b18a]/10 text-[#a3b18a]">
+            <Badge variant="outline" className="mb-3 sm:mb-4 text-xs sm:text-sm border-[#a3b18a] bg-[#a3b18a]/10 text-[#a3b18a]">
               How It Works
             </Badge>
-            <h2 className="text-4xl font-bold mb-4 animated-gradient-text">Simple Steps to Success</h2>
-            <p className="text-gray-300 max-w-2xl mx-auto">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-4 animated-gradient-text px-4 sm:px-0">Simple Steps to Success</h2>
+            <p className="text-sm sm:text-base text-gray-300 max-w-2xl mx-auto px-4 sm:px-0">
               Getting started with KaamKonnect is easy. Follow these simple steps to find your next opportunity or hire talent in India.
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
             {/* BUYER: Customize the process steps to match your business workflow */}
             {[
               { step: 1, title: "Create Your Profile", description: "Sign up and showcase your skills and experience." },
@@ -246,13 +246,13 @@ export default function Home() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={howItWorksInView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.6, delay: index * 0.2 }}
-                className="relative bg-white/5 backdrop-blur-lg rounded-lg p-6 border border-[#a3b18a]/10"
+                className="relative bg-white/5 backdrop-blur-lg rounded-lg p-5 sm:p-6 border border-[#a3b18a]/10"
               >
-                <div className="absolute -left-4 -top-4 w-12 h-12 bg-[#a3b18a] rounded-full flex items-center justify-center text-2xl font-bold text-black">
+                <div className="absolute -left-3 sm:-left-4 -top-3 sm:-top-4 w-10 h-10 sm:w-12 sm:h-12 bg-[#a3b18a] rounded-full flex items-center justify-center text-lg sm:text-2xl font-bold text-black">
                   {item.step}
                 </div>
-                <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
-                <p className="text-gray-300">{item.description}</p>
+                <h3 className="text-lg sm:text-xl font-semibold mb-2 pt-2">{item.title}</h3>
+                <p className="text-sm sm:text-base text-gray-300">{item.description}</p>
               </motion.div>
             ))}
           </div>
@@ -265,28 +265,28 @@ export default function Home() {
       {/* Testimonials */}
       <motion.section
         ref={testimonialsRef}
-        className="py-20"
+        className="py-16 sm:py-20 px-4 sm:px-6 lg:px-8"
         initial={{ opacity: 0 }}
         animate={testimonialsInView ? { opacity: 1 } : {}}
         transition={{ duration: 0.6 }}
       >
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto max-w-7xl">
           <motion.div 
-            className="text-center mb-16"
+            className="text-center mb-12 sm:mb-16"
             initial={{ opacity: 0, y: 20 }}
             animate={testimonialsInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6 }}
           >
-            <Badge variant="outline" className="mb-4 border-[#a3b18a] bg-[#a3b18a]/10 text-[#a3b18a]">
+            <Badge variant="outline" className="mb-3 sm:mb-4 text-xs sm:text-sm border-[#a3b18a] bg-[#a3b18a]/10 text-[#a3b18a]">
               Testimonials
             </Badge>
-            <h2 className="text-4xl font-bold mb-4 animated-gradient-text">What Our Users Say</h2>
-            <p className="text-gray-300 max-w-2xl mx-auto">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-4 animated-gradient-text px-4 sm:px-0">What Our Users Say</h2>
+            <p className="text-sm sm:text-base text-gray-300 max-w-2xl mx-auto px-4 sm:px-0">
               Hear from professionals and businesses who have found success on our platform in India.
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
             {/* BUYER: Replace with real customer testimonials from your business */}
             {[
               { name: "Priya S.", role: "Freelance Designer", quote: "KaamKonnect has transformed my freelance career. I've connected with amazing clients across India and my income has doubled!" },
@@ -298,14 +298,14 @@ export default function Home() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={testimonialsInView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.6, delay: index * 0.2 }}
-                className="bg-white/5 backdrop-blur-lg rounded-lg p-6 border border-[#a3b18a]/10"
+                className="bg-white/5 backdrop-blur-lg rounded-lg p-5 sm:p-6 border border-[#a3b18a]/10"
               >
-                <p className="text-gray-300 mb-4">"{testimonial.quote}"</p>
+                <p className="text-sm sm:text-base text-gray-300 mb-4 leading-relaxed">"{testimonial.quote}"</p>
                 <div className="flex items-center">
-                  <div className="w-12 h-12 bg-[#a3b18a] rounded-full mr-4"></div>
+                  <div className="w-10 h-10 sm:w-12 sm:h-12 bg-[#a3b18a] rounded-full mr-3 sm:mr-4 flex-shrink-0"></div>
                   <div>
-                    <h4 className="font-semibold">{testimonial.name}</h4>
-                    <p className="text-sm text-gray-400">{testimonial.role}</p>
+                    <h4 className="text-sm sm:text-base font-semibold">{testimonial.name}</h4>
+                    <p className="text-xs sm:text-sm text-gray-400">{testimonial.role}</p>
                   </div>
                 </div>
               </motion.div>

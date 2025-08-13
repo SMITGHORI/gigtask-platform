@@ -28,10 +28,12 @@ export default function Header() {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           <Link href="/" className="flex items-center space-x-2">
+            {/* BUYER: Replace Leaf icon with your logo and update company name */}
             <Leaf className="w-8 h-8 text-[#a3b18a]" />
             <span className="text-xl font-bold animated-gradient-text">KaamKonnect</span>
           </Link>
           <nav className="hidden md:flex items-center space-x-6">
+            {/* BUYER: Customize navigation menu items for your business */}
             {['Features', 'Categories', 'How It Works'].map((item, index) => (
               <motion.div
                 key={item}
@@ -69,6 +71,7 @@ export default function Header() {
             className="md:hidden absolute top-full left-0 right-0 bg-black/90 backdrop-blur-lg"
           >
             <nav className="flex flex-col space-y-4 p-4">
+              {/* BUYER: Mobile navigation menu - same items as desktop */}
               {['Features', 'Categories', 'How It Works'].map((item, index) => (
                 <motion.div
                   key={item}

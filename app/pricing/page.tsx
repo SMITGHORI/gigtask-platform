@@ -7,6 +7,7 @@ import { CheckCircle } from 'lucide-react'
 import { motion } from "framer-motion"
 
 export default function PricingPage() {
+  {/* BUYER: Customize pricing plans, features, and pricing for your business */}
   const plans = [
     { 
       name: "Basic", 

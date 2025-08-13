@@ -5,6 +5,7 @@ import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 
 export default function CategoriesPage() {
+  {/* BUYER: Customize job categories to match your target industries and market */}
   const categories = [
     "Technology", "Design", "Writing", "Customer Service",
     "Marketing", "Event Planning", "Education", "Photography",

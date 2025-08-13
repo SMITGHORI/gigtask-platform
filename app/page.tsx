@@ -85,26 +85,29 @@ export default function Home() {
             animate={heroInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
+            {/* BUYER: Update tagline to match your business */}
             <Badge variant="outline" className="mb-8 border-[#a3b18a] bg-[#a3b18a]/10 text-[#a3b18a]">
               Connect. Work. Succeed.
             </Badge>
           </motion.div>
-          <motion.h1
-            className="text-4xl sm:text-5xl md:text-7xl font-bold mb-6 animated-gradient-text"
-            initial={{ opacity: 0, y: 20 }}
-            animate={heroInView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.6, delay: 0.4 }}
-          >
-            Your Gateway to Flexible Work Opportunities in India
-          </motion.h1>
-          <motion.p
-            className="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto mb-12"
-            initial={{ opacity: 0, y: 20 }}
-            animate={heroInView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.6, delay: 0.6 }}
-          >
-            Connect with local businesses and event organizers. Find flexible work that fits your schedule.
-          </motion.p>
+                      {/* BUYER: Update main headline to match your business value proposition */}
+            <motion.h1
+              className="text-4xl sm:text-5xl md:text-7xl font-bold mb-6 animated-gradient-text"
+              initial={{ opacity: 0, y: 20 }}
+              animate={heroInView ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.6, delay: 0.4 }}
+            >
+              Your Gateway to Flexible Work Opportunities in India
+            </motion.h1>
+                      {/* BUYER: Update description to match your business model */}
+            <motion.p
+              className="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto mb-12"
+              initial={{ opacity: 0, y: 20 }}
+              animate={heroInView ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.6, delay: 0.6 }}
+            >
+              Connect with local businesses and event organizers. Find flexible work that fits your schedule.
+            </motion.p>
           
           {/* Search Bar */}
           <motion.div
@@ -116,6 +119,7 @@ export default function Home() {
             <div className="absolute inset-y-0 left-4 flex items-center pointer-events-none">
               <Search className="h-5 w-5 text-gray-400" />
             </div>
+            {/* BUYER: Customize search placeholder text */}
             <Input 
               type="text"
               placeholder="Search for opportunities..."
@@ -130,6 +134,7 @@ export default function Home() {
             animate={heroInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6, delay: 1 }}
           >
+            {/* BUYER: Update CTA button text to match your business actions */}
             <Button size="lg" className="bg-[#a3b18a] text-black hover:bg-[#a3b18a]/80">
               Post a Task
             </Button>
@@ -179,6 +184,7 @@ export default function Home() {
           </motion.div>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            {/* BUYER: Customize feature grid icons and labels to match your business */}
             {[
               { icon: Briefcase, label: 'Jobs' },
               { icon: Clock, label: 'Flexible' },
@@ -229,6 +235,7 @@ export default function Home() {
           </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {/* BUYER: Customize the process steps to match your business workflow */}
             {[
               { step: 1, title: "Create Your Profile", description: "Sign up and showcase your skills and experience." },
               { step: 2, title: "Browse Opportunities", description: "Explore a wide range of gigs that match your interests." },
@@ -280,6 +287,7 @@ export default function Home() {
           </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {/* BUYER: Replace with real customer testimonials from your business */}
             {[
               { name: "Priya S.", role: "Freelance Designer", quote: "KaamKonnect has transformed my freelance career. I've connected with amazing clients across India and my income has doubled!" },
               { name: "Rahul M.", role: "Small Business Owner", quote: "Finding reliable talent has never been easier. KaamKonnect has helped my business grow exponentially in the competitive Indian market." },

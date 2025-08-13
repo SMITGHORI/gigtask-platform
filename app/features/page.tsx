@@ -23,14 +23,15 @@ export default function FeaturesPage() {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {[
-                { icon: <Target className="w-8 h-8" />, title: "Smart Matching", description: "AI-powered job matching that connects you with relevant opportunities across India." },
-                { icon: <Calendar className="w-8 h-8" />, title: "Flexible Scheduling", description: "Set your own hours and work when it suits you best, perfect for the Indian gig economy." },
-                { icon: <IndianRupee className="w-8 h-8" />, title: "Competitive Pay", description: "Fair compensation for your skills and time, with transparent pricing in Indian Rupees." },
-                { icon: <Shield className="w-8 h-8" />, title: "Secure Platform", description: "Your data and payments are always protected, adhering to Indian cybersecurity standards." },
-                { icon: <Users className="w-8 h-8" />, title: "Community", description: "Join a network of professionals and businesses from all over India." },
-                { icon: <Briefcase className="w-8 h-8" />, title: "Diverse Opportunities", description: "Find work across multiple industries and sectors throughout India." }
-              ].map((feature, index) => (
+                          {/* BUYER: Customize features, descriptions, and icons to match your business offerings */}
+            {[
+              { icon: <Target className="w-8 h-8" />, title: "Smart Matching", description: "AI-powered job matching that connects you with relevant opportunities across India." },
+              { icon: <Calendar className="w-8 h-8" />, title: "Flexible Scheduling", description: "Set your own hours and work when it suits you best, perfect for the Indian gig economy." },
+              { icon: <IndianRupee className="w-8 h-8" />, title: "Competitive Pay", description: "Fair compensation for your skills and time, with transparent pricing in Indian Rupees." },
+              { icon: <Shield className="w-8 h-8" />, title: "Secure Platform", description: "Your data and payments are always protected, adhering to Indian cybersecurity standards." },
+              { icon: <Users className="w-8 h-8" />, title: "Community", description: "Join a network of professionals and businesses from all over India." },
+              { icon: <Briefcase className="w-8 h-8" />, title: "Diverse Opportunities", description: "Find work across multiple industries and sectors throughout India." }
+            ].map((feature, index) => (
                 <div
                   key={index}
                   className="bg-white/5 backdrop-blur-lg rounded-lg p-6 border border-[#a3b18a]/10"

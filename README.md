@@ -135,7 +135,7 @@ A modern, responsive web application built for connecting freelancers and busine
 1. **Clone the repository**
    ```bash
    git clone <repository-url>
-   cd gigtask-platform
+   cd kaamkonnect-platform
    ```
 
 2. **Install dependencies**
@@ -146,7 +146,8 @@ A modern, responsive web application built for connecting freelancers and busine
 3. **Set up Supabase** (REQUIRED for full functionality)
    - Create a new project at [supabase.com](https://supabase.com)
    - Copy your project URL and API keys
-   - Run the database schema (see SUPABASE_SETUP.md)
+   - Run the database schema from `supabase/schema.sql`
+   - See **[SUPABASE_SETUP.md](./SUPABASE_SETUP.md)** for detailed instructions
 
 4. **Configure environment variables**
    ```bash
@@ -162,20 +163,11 @@ A modern, responsive web application built for connecting freelancers and busine
 6. **Create admin account**
    - Visit http://localhost:3000/auth/login
    - Sign up with your email
-   - Make yourself admin (see SUPABASE_SETUP.md)
+   - Make yourself admin using SQL query in SUPABASE_SETUP.md
 
 7. **Access admin panel**
    - Visit http://localhost:3000/admin
    - Start managing your platform!
-
-### Detailed Setup Guide
-
-For complete setup instructions, see **[SUPABASE_SETUP.md](./SUPABASE_SETUP.md)** - this includes:
-- Step-by-step Supabase configuration
-- Database schema setup
-- Authentication configuration
-- Admin user creation
-- Production deployment guide
 
 ### Build for Production
 
@@ -336,6 +328,36 @@ gigtask-platform/
 - **TypeScript**: Type checking and validation
 - **Prettier**: Code formatting (if configured)
 
+## 💰 For Buyers - Investment Value
+
+### What You Get
+- ✅ **Complete Gig Marketplace**: Full-featured platform ready to deploy
+- ✅ **Professional Admin CMS**: Manage users, gigs, categories, applications
+- ✅ **Modern Tech Stack**: Next.js 14, TypeScript, Supabase, Tailwind CSS
+- ✅ **Production Ready**: Enterprise-level security, validation, performance
+- ✅ **Responsive Design**: Works perfectly on all devices
+- ✅ **Time Saved**: 3-6 months of development time
+
+### Development Cost Saved
+- **Frontend Development**: $10,000 - $25,000
+- **Backend & Database**: $8,000 - $20,000
+- **Admin Panel**: $5,000 - $15,000
+- **Authentication & Security**: $3,000 - $8,000
+- **Testing & QA**: $2,000 - $5,000
+- **Total Estimated**: $28,000 - $73,000
+
+### Quick Customization (What You Need to Change)
+1. **Branding**: Update logo, colors, company name
+2. **Content**: Customize messaging, features, pricing
+3. **Categories**: Adjust job categories for your market
+4. **Environment**: Set up Supabase, configure API keys
+
+### Ready for These Markets
+- **Freelance Platforms**: Connect talent with clients
+- **Gig Economy Apps**: Task-based work opportunities  
+- **Service Marketplaces**: Professional services
+- **Local Markets**: City/region-specific platforms
+
 ## 📝 License
 
 This project is proprietary software. All rights reserved.
@@ -346,13 +368,4 @@ For technical support or questions about this project, please contact the develo
 
 ---
 
-**Note for Buyers**: This is a complete, production-ready web application. All sensitive information has been removed and replaced with placeholder values. You will need to:
-
-1. Configure your environment variables
-2. Update branding and content
-3. Set up your database and services
-4. Configure payment gateways (if applicable)
-5. Set up email services
-6. Customize the application for your specific business needs
-
-The codebase is well-structured, documented, and ready for immediate development and deployment.
+**🎯 Ready to Launch?** This platform gives you everything needed for a successful gig marketplace. With proper setup, you can launch in days instead of months, saving significant development costs and time to market.

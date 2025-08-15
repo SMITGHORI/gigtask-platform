@@ -4,7 +4,7 @@
  * Run these tests after setting up Supabase to ensure everything works
  */
 
-import { createServerClient } from '@/lib/auth'
+import { createServerClient } from '@/lib/auth-server'
 import { validateRequest, GigSchema, ApplicationSchema, CategorySchema } from '@/lib/validations'
 import { cache, cacheKeys } from '@/lib/cache'
 

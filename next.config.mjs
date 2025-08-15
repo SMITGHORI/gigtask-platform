@@ -21,6 +21,10 @@ const nextConfig = {
     parallelServerBuildTraces: true,
     parallelServerCompiles: true,
   },
+  // Disable static generation for pages that require authentication
+  generateStaticParams: false,
+  // Increase static generation timeout
+  staticPageGenerationTimeout: 120,
 }
 
 mergeConfig(nextConfig, userConfig)

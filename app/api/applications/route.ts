@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server'
-import { createServerClient } from '@/lib/auth'
+import { createServerClient } from '@/lib/auth-server'
 import { ApplicationSchema, validateRequest, formatValidationErrors } from '@/lib/validations'
 
 // GET /api/applications - Get applications (filtered by user role)

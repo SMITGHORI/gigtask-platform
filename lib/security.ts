@@ -1,4 +1,4 @@
-import { createServerClient } from '@/lib/auth'
+import { createServerClient } from '@/lib/auth-server'
 import { AuthenticationError, AuthorizationError, RateLimitError } from '@/lib/errors'
 import { rateLimit } from '@/lib/errors'
 

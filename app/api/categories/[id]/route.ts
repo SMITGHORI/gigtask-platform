@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server'
-import { createServerClient } from '@/lib/auth'
+import { createServerClient } from '@/lib/auth-server'
 import { z } from 'zod'
 
 const CategoryUpdateSchema = z.object({

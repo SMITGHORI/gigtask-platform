@@ -28,7 +28,7 @@ export default function PricingPage() {
 
   return (
     <div className="min-h-screen bg-black text-white">
-      <Header isMenuOpen={false} setIsMenuOpen={() => {}} />
+      <Header />
       
       <main className="pt-20">
         <section className="py-16 sm:py-20">

@@ -1,5 +1,5 @@
 import { Suspense } from 'react'
-import { createServerClient } from '@/lib/auth'
+import { createServerClient } from '@/lib/auth-server'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import CategoriesTable from '@/components/admin/CategoriesTable'

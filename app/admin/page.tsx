@@ -1,5 +1,5 @@
 import { Suspense } from 'react'
-import { createServerClient } from '@/lib/auth'
+import { createServerClient } from '@/lib/auth-server'
 import DashboardStats from '@/components/admin/DashboardStats'
 import RecentActivity from '@/components/admin/RecentActivity'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'

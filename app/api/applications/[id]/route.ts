@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server'
-import { createServerClient } from '@/lib/auth'
+import { createServerClient } from '@/lib/auth-server'
 
 // GET /api/applications/[id] - Get single application
 export async function GET(

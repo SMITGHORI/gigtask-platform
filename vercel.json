@@ -1,7 +1,7 @@
 {
   "framework": "nextjs",
   "buildCommand": "npm run build",
-  "installCommand": "npm install --legacy-peer-deps",
+  "installCommand": "npm install",
   "rewrites": [
     {
       "source": "/((?!api|_next|_static|_vercel|favicon.ico|robots.txt|sitemap.xml|[\\w-]+\\.\\w+).*)",

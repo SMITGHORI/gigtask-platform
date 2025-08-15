@@ -44,10 +44,5 @@
       ]
     }
   ],
-  "functions": {
-    "app/api/**/*.ts": {
-      "runtime": "nodejs18.x"
-    }
-  },
   "regions": ["iad1"]
 }
